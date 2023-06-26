@@ -1,11 +1,34 @@
+// Definizione di variabili globali
+$color-darkgrey: #303030;
+$color-blue: #0282f9;
+$color-grey: #353535;
+$color-lightgrey: #909090;
+$marginbottom: 0.4rem;
+$lineheight: 1.7rem;
+
+// Importazione dei file parziali
+@use "partials/header";
+@use "partials/magazine";
+@use "partials/main";
+@use "partials/icons";
+@use "partials/cta";
+@use "partials/footer";
+
 @import "~bootstrap/scss/bootstrap";
 
-body {
-    background-image: url("../img/picsum16.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@600&family=Open+Sans:wght@300;400;600&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-    color: red;
+:root {
+    font-family: "Encode Sans Condensed", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
